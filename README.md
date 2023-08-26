@@ -24,8 +24,10 @@
 
 ### Page Insights
 #### Desktop
+![Desktop Page Insights](./PageSpeed-Insights-2.png)
 
 #### Mobile
+![Mobile Page Insights](./PageSpeed-Insights.png)
 
 ### :link: Links
 - Solution URL: [Solution URL](https://github.com/GiDDeRo/Age-Calculator)
