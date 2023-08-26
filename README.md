@@ -23,7 +23,7 @@
 ![Mobile Preview](./Preview-Samsumg%20S20%20Ultra.png "Mobile design")
 
 ### :link: Links
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://github.com/GiDDeRo/Age-Calculator)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ### :pencil: The challenge
