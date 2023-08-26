@@ -24,7 +24,7 @@
 
 ### :link: Links
 - Solution URL: [Solution URL](https://github.com/GiDDeRo/Age-Calculator)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL here]([https://your-live-site-url.com](https://giddero.github.io/Age-Calculator/))
 
 ### :pencil: The challenge
 
