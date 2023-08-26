@@ -1,0 +1,359 @@
+/* 
+### Primary
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (inputs): 32px
+
+### Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body {
+    display: block;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    font-family:'Poppins', sans-serif;
+    overflow: hidden;
+}
+main {
+    background-color: white;
+    width: 650px;
+    border-radius: 20px 20px 150px 20px;
+    padding: 40px;
+    box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.135);
+
+    animation: mainCard .7s ease;
+}
+@keyframes mainCard {
+    0% {
+        transform: translateY(-600px);
+        box-shadow: none;
+    }
+    70% {
+        transform: translateY(20px);
+        box-shadow: none;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+ 
+main > form {
+    display: flex;
+    justify-content: space-between;
+    width: 73%;
+}
+main > form > div > label {
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+main > form > div > input {
+    width: 120px;
+    padding: 12px;
+    display: block;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family:'Poppins', sans-serif;
+}
+main > form > div > input::placeholder {
+    font-weight: 700;
+    font-family:'Poppins', sans-serif;
+} 
+main > form > div > input:hover {
+    cursor: text;
+    border: 1px solid hsl(259, 100%, 65%);
+}
+main > form > div > input:focus {
+    outline: none;
+    border: 1px solid hsl(259, 100%, 65%);
+    background: transparent;
+    caret-color: hsl(259, 100%, 65%);
+    cursor: text;
+}
+small {
+    color: rgb(233, 66, 66);
+    font-style: italic;
+    display: block;
+    font-size: 11px;
+    height: 14px;
+    position: relative;
+    top: 5px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+#hr {
+    width: 100%;
+}
+.icon hr {
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+button {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 22px;
+    border: none;  
+}
+.icon button:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+.icon button:focus {
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+}
+.icon img {
+    height: 31px;
+}
+span {
+    display: block;
+}
+span p {
+    font-size: 70px;
+    line-height: 80px;
+    color: hsl(0, 0%, 8%);
+    font-weight: 800;
+    display: inline;
+    font-style: italic;
+}
+span p:nth-child(1) {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 7px;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: black;
+    padding: 10px;
+    font-weight: 700;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+a:link {
+    color: red;
+    background: transparent;
+}
+a:visited {
+    color: brown;
+    background: transparent;
+}
+a:focus {
+    color: orange;
+    background: transparent;
+    border: 2px solid orange;
+}
+@media (max-width: 1008px) {
+    body {
+        overflow: scroll;
+    }
+    main {
+        box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.103);
+    }
+    main > form {
+        width: 80%;
+    }
+    main > form > div > input {
+        width: 90%;
+        padding: 8px 10px;
+        font-size: 18px;
+    }
+    .icon {
+        margin: 15px 0px;
+    }
+    button {
+        padding: 20px;
+    }
+    .icon img {
+        height: 25px;
+    }
+    small {
+        top: 3px;
+    }
+    span p {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    span p {
+        font-size: 60px;
+    }
+    footer {
+        bottom: -20px;
+    }
+    
+}
+@media (max-width: 500px) {
+    main {
+        /* display: grid; */
+        padding: 30px 25px;
+        border-radius: 20px 20px 100px 20px;
+    }
+    main > form {
+        width: 100%;
+    }
+    main > form > div > input {
+        font-size: 17px;
+    }
+    .icon {
+        justify-content: center;
+        float: center;
+        margin: 10px 0px;
+    }
+    #hr {
+        position: absolute;
+        width: 80%;
+    }
+    button {
+        padding: 20px;
+        z-index: 1;
+    }
+    .icon img {
+        height: 25px;
+    }
+    span p {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+@media (max-width: 430px) {
+    span p {
+        font-size: 55px;
+        line-height: 60px;
+    }
+    small {
+        font-size: 8px;
+    }
+    #hr {
+        width: 75%;
+    }
+}
+@media (max-width: 410px) {
+    main {
+        box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.068);
+    }
+    span p {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+@media (max-width: 380px) {
+    main {
+        padding: 30px 25px;
+    }
+    span p {
+        font-size: 47px;
+        line-height: 50px;
+    }
+}
+@media (max-width: 370px) {
+    body {
+        display: block;
+        width: 100vw;
+        height: 100%;
+        padding: 10px;
+        overflow: scroll;
+    }
+    main {
+        width: 100%;
+        padding: 30px 20px;
+        border-radius: 20px 20px 80px 20px;
+        animation: none;
+        box-shadow: none;
+    }
+    main > form {
+        flex-direction: column;
+        width: 100%;
+    }
+    main > form > div {
+        height: 85px;
+    }
+    main > form > div > input {
+        width: 100%;
+    }
+    small {
+        text-align: right;
+    }
+    .icon {
+        margin: 10px 0px;
+    }
+    .icon img {
+        height: 25px;
+    }
+    #hr {
+        width: 80%;
+    }
+    span {
+        display: grid;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    span p {
+        justify-self: center;
+        font-size: 40px;
+        line-height: none;
+    }
+    span p:nth-child(1) {
+        font-size: 60px;
+    }
+    footer {
+        position: relative;
+        display: block;
+        margin-top: 20px;
+        bottom: 0px;
+    }
+}
+@media (max-width: 230px) {
+    span {
+        margin-top: 10px;
+    }
+    span p {
+        justify-self: center;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    span p:nth-child(1) {
+        font-size: 40px;
+    }
+}

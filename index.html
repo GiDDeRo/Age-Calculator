@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Age calculator app | Frontend Mentor</title>
+</head>
+<body>
+
+  <main role="main">
+    <form role="form">
+      <div class="day">
+        <label for="day" id="Heading_day">Day</label>
+        <input type="text" name="" id="day" placeholder="DD">
+        <small id="warning-day"></small>
+      </div>
+
+      <div class="month">
+        <label for="month" id="Heading_month">Month</label>
+        <input type="text" name="" id="month" placeholder="MM">
+        <small id="warning-month"></small>
+      </div>
+
+      <div class="year">
+        <label for="year" id="Heading_year">Year</label>
+        <input type="text" name="" id="year" placeholder="YYYY">
+        <small id="warning-year"></small>
+      </div>
+    </form>
+
+    <div class="icon">
+      <div id="hr"><hr></div>
+      <button type="submit"><img src="icon-arrow.svg" alt="arrow-icon"></button>
+    </div>
+
+    <article>
+      <span>  <p id="year_digit" data-val="1000">--</p> <p id="y-value">years</p>  </span>
+      <span>  <p id="month_digit" data-val="500">--</p> <p id="m-value">months</p>  </span>
+      <span>  <p id="day_digit" data-val="790">--</p> <p id="d-value">days</p>  </span>
+    </article>
+  </main>
+  
+  <footer  role="contentinfo">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" aria-label="Front-end Mentor Home Page" title="Front-end Mentor Home Page">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/GiDDeRo" title="Gideon's Profile" aria-label="Developer's Front-end Profile">Gideon</a>.
+    </div>
+  </footer>
+
+  <script src="test.js"></script>
+</body>
+</html>
