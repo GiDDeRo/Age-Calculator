@@ -24,7 +24,7 @@
 
 ### Page Insights
 #### Desktop
-![Desktop Page Insights](./PageSpeed-Insights-2.png)
+![Desktop Page Insights](/PageSpeed-Insight2.png)
 
 #### Mobile
 ![Mobile Page Insights](./PageSpeed-Insights.png)
